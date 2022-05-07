@@ -1,0 +1,24 @@
+<p>admin works!</p>
+
+<form (ngSubmit) = "createPServ()">
+    P_id <input type="text" name="pid" [(ngModel)] = "prdC.p_id">
+    p_name <input type="text" name="pname" [(ngModel)] = "prdC.p_name">
+    <input type="submit" value="submit">
+</form>
+
+<form (ngSubmit) = "readPServ()">
+    P_id <input type="text" name="pid" [(ngModel)] = "prdR.p_id">
+    <p>{{ prdR.p_name }}</p>
+    <input type="submit" value="submit">
+</form>
+
+<form (ngSubmit) = "updatePServ()">
+    P_id <input type="text" name="pid" [(ngModel)] = "prdU.p_id">
+    p_name <input type="text" name="pname" [(ngModel)] = "prdU.p_name">
+    <input type="submit" value="submit">
+</form>
+
+<form (ngSubmit) = "deletePServ()">
+    P_id <input type="text" name="pid" [(ngModel)] = "prdD.p_id">
+    <input type="submit" value="submit">
+</form>
