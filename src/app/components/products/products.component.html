@@ -20,8 +20,10 @@
   <div *ngFor = "let row of products" class="card col-md-4" style="padding: 5px;">
     <img src="https://picsum.photos/200" class="card-img-top" alt="...">
     <div class="card-body">
-      <p class="card-text">{{ row.p_name }}</p>
-      <p class="bb"> home
+      <h5 class="card-title">{{ row.p_name }}</h5>
+      <h5 class="card-title">{{ row.p_size }}</h5>
+      <p class="card-text"></p>
+      <p class="bb"> {{ row.p_price }}
         <span></span><span></span><span></span><span></span></p>
     </div>
   </div>
