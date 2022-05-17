@@ -29,4 +29,8 @@ export class ProductsComponent implements OnInit {
     )
   }
 
+  details(){
+    
+  }
+
 }
