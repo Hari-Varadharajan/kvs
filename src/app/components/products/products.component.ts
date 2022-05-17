@@ -10,7 +10,7 @@ import { ProductsService } from 'src/app/shared/products.service';
 export class ProductsComponent implements OnInit {
 
   products : any;
-
+  
   constructor(private productService : ProductsService) { }
 
   ngOnInit(): void {
