@@ -5,7 +5,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul style="font-size:20px;" class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul id="top" style="font-size:20px;" class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
@@ -16,6 +16,7 @@
           <a class="nav-link" href="http://localhost:4200/products">About</a>
         </li>
       </ul>
+      
      <ul style="font-size:20px;" class="navbar-nav ms-auto mb-2 mb-lg-0">
       <li class="nav-item">
         <a class="nav-link" aria-current="page" href="#">Cart</a>
@@ -24,7 +25,7 @@
     </div>
   </div>
 </nav>
-
+<h5 style="margin-top:20px;">OUR PRODUCTS</h5>
 
 
 <!-- 
@@ -53,13 +54,15 @@
       <img src="https://picsum.photos/200"  class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">{{ row.p_name }}</h5>
+        <p class="card-text">{{ row.p_id }}</p>
         <!-- <p class="card-text">{{ row.p_name }}</p>
+      
         <p class="card-text">{{ row.p_size }}</p>
         <p class="card-text">{{row.p_stock}}</p> -->
         <!-- <p class="card-text">{{row.p_price}}</p>
         <p class="card-text">{{row.p_sleev}}</p>
         <p class="card-text">{{row.p_neck}}</p> -->
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a  href="#" class="btn btn-warning">Go</a>
       </div>
     </div>
     
