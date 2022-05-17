@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 declare var VANTA:any
+declare var TypeIt:any
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,9 +8,12 @@ declare var VANTA:any
 })
 export class HomeComponent implements OnInit {
 
+
+
   constructor() { }
 
   ngOnInit(): void {
+   
     VANTA.BIRDS({
       el: "#bgvanta2",
       mouseControls: true,
@@ -36,6 +40,12 @@ export class HomeComponent implements OnInit {
       color: 0x486b53
     })
   }
+
+  /*new TypeIt(".multipleStrings", {
+    strings: ["This is a great string.", "But here is a better one."],
+    speed: 50,
+    waitUntilVisible: true,
+  }).go();*/
 
  
 
