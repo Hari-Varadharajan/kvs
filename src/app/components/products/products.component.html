@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-light fixed-top  bg-light">
+<nav style="background-color:rgb(255, 226, 106,0.6) ;box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);font-size: 20px;" class="navbar navbar-expand-lg navbar-light fixed-top">
   <div class="container-fluid">
-    <a style="font-size: 40px;" class="navbar-brand" href="#">KVS</a>
+    <a style="font-size: 20px;" class="navbar-brand" href="#">KVS</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -13,7 +13,7 @@
           <a class="nav-link" href="http://localhost:4200/products">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="http://localhost:4200/products">About</a>
+          <a class="nav-link" href="#">About</a>
         </li>
       </ul>
       
@@ -25,7 +25,7 @@
     </div>
   </div>
 </nav>
-<h5 style="margin-top:20px;">OUR PRODUCTS</h5>
+
 
 
 <!-- 
@@ -37,7 +37,7 @@
             </div>
           </div>
 </body>  -->
-<div>
+<div style="background: linear-gradient(to top left, #75c9b7 0%, #abd699 100%);">
   <div class="container">
     <br><br>
     <div class="row">
@@ -49,9 +49,9 @@
             <a href="#" class="btn btn-warning">Go somewhere</a>
           </div>
     </div> -->
-    <h2 style="text-align: center;">OUR PRODUCTS</h2>
+    <h2 style="text-align: center;margin-top:20px ;">OUR PRODUCTS</h2>
     <div *ngFor = "let row of products" id="cardbox" class="card col-md-2" style="position : relative ; border-radius: 5px;border-color: lightblue;margin: 15px;">
-      <img src="" class="card-img-top" alt="...">
+      <img src="https://picsum.photos/200" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">{{ row.p_name }}</h5>
         <p class="card-text">{{ row.p_id }}</p>
