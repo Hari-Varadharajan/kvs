@@ -16,10 +16,9 @@ export class HomeComponent implements OnInit ,AfterViewInit{
       center: [ 11.273571849637891, 77.60694606009113],  //, 
       zoom: 17
     });
-    const popup = L.popup()
-    .setLatLng([11.273571849637891, 77.60694606009113])
-    .setContent("I am a standalone popup.")
-    .openOn(this.map);
+    L.marker([11.273571849637891, 77.60694606009113]).addTo(this.map)
+    .bindPopup('Find Us Here')
+    .openPopup();
 
     const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
