@@ -68,3 +68,5 @@ color:#16123f;
       transform: rotateY(360deg) 
     }
   } */
+
+  #map { height: 180px; }
