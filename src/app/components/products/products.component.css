@@ -71,13 +71,24 @@
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
 
-#top li:hover
+#top li a
+{
+  transition: color 0.5s, background-color 0.5s;
+color:#16123f;
+  
+  
+  
+}
+#top li 
+{
+  padding: 2px;
+}
+#top li a:hover
            {
-               background-color:rgba(0, 0, 0, 0.05);
+                background-color:rgba(0, 0, 0, 0.05); 
+                
+               color: white;
                
                
-               border-radius: 15px;
                
            }
-
-           

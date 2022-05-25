@@ -7,7 +7,7 @@
 <div class="container-fluid">
 <nav style="background-color:rgb(255, 226, 106,0.8) ;box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);font-size: 20px;" class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container-fluid">
-      <a style="font-size: 20px;" class="navbar-brand" href="#">KVS</a>
+      <a style="font-size: 20px;" class="navbar-brand" href="http://localhost:4200/">KVS</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -17,7 +17,7 @@
             <a class="nav-link active nv" href="http://localhost:4200/products">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active nv" href="#about">About</a>
+            <a class="nav-link active nv" href="#bgvanta2">About</a>
           </li>
         </ul>
        <ul style="font-size:20px;" class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -38,31 +38,38 @@
             <P style="color: #16123f;font-size: 30px">Great <span style="border-left: 5px solid #ffe26a;background-color: rgb(255, 226, 106,0.4);">fabrics</span>, amazing <span style="border-left: 5px solid #ffe26a;background-color: rgb(255, 226, 106,0.4);">products</span></P>
           </div>
           <div style="margin-top: 150px;border-radius: 10px;border: solid 1px rgb(255, 226, 106,0.4);padding: 5px;background-color: rgb(255, 226, 106,0.4);" class="col-md-4">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="../../../assets/images/cars1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item ">
-                  <img src="../../../assets/images/cars2.jpg" class="d-block w-100" alt="...">
-                </div>
-              
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+           <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../../../assets/images/cars2.jpg" alt="" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="../../../assets/images/cars1.jpg" alt="Chicago" class="d-block w-100">
+    </div>
+    <!-- <div class="carousel-item">
+      <img src="ny.jpg" alt="New York" class="d-block w-100">
+    </div> -->
+  </div>
+
+  <!-- Left and right controls/icons -->
+ 
+</div>
           </div>
         </div>
     
 </div>
 <div class="container-fluid" id="bgvanta2">
-  <br><br><br>
+  <br><br>
+  <h1 style="color: white;text-align: center;">About us</h1>
   <div style="margin-top: 20px;" class="container px-4">
     <div class="row gx-5" style="margin: left 7px;">
       <div class="col" style=" box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9) ;background-color: white;">
@@ -93,13 +100,38 @@
 
 </div>
 <div class="container-fluid" id="bgvanta3">
-<h1 style="color: white;">About us</h1>
-<div id="about" class="row">
-  <div class="col-md-12" style="background-color: rgb(255, 226, 106,0.6);height: 300px; ;"></div>
-</div>
+  <br>
+  <div style="margin-top: 20px;" class="container px-4">
+    <div class="row gx-5" style="margin: left 7px;">
+      <!-- <div class="col" style=" box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9) ;background-color: white;">
+       <div class="p-5">
+         <h1 class="text" style="text-align:center; padding-left: 0%; font-weight: 900;color:black;" >Our Duty</h1>
+         <hr style="color: black;">
+         <br>
+         <ul>
+           <li>Our quest is to become the most admired group by all our stakeholders i.e., Customers, Employees, Share holders and Society at large.</li><br>
+           <li>We will be always conscious of the path we take to ensure highest ethical and moral compliance even as we remain totally focused on our goals.</li>
+         </ul>
+        </div>
+      </div> -->
+      
+      <div class="col" style="box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9) ;background-color: white; ">
+        <div class="p-5">
+          <h1 style="text-align:center; padding-left: 0%; font-weight: 900; color:#ffe26a" >Our Goal</h1>
+          <hr style="color:black;">
+          <br>
+          <ul>
+            <li>To remain focused on developing Specialized and Technical products for safety and functional wear.</li><br><br>
+             <li>To be one of the most admired garment companies which follows and supports sustainable environmental friendly process.</li>
+          </ul>
+         </div>
+       </div>
+      
+    </div>
+  </div>
 <div>
   <div class="container-fluid">
-    <div id="map" style="background-color: blue"></div>
+    <div id="map" style="background-color:  linear-gradient(to top left, #75c9b7 0%, #abd699 100%);"></div>
   </div>
 </div>
 </div>
