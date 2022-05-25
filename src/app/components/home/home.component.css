@@ -6,7 +6,8 @@
 
 #bgvanta3
 {
-  background: linear-gradient(to top left, #75c9b7 0%, #abd699 100%);
+  /* background: linear-gradient(to top left, #75c9b7 0%, #abd699 100%); */
+  background-color: rgb(219, 244, 234);
 }
 
 
@@ -38,7 +39,8 @@ color:#16123f;
 #bgvanta2{
     width: 100%;
     height: 500px;
-    background: linear-gradient(to top left, #abd699 0%, #75c9b7 100%);
+    /* background: linear-gradient(to top left, #abd699 0%, #75c9b7 100%); */
+    background-color: rgb(219, 244, 234);
 }
 /* #cmpny{
     color: white;
@@ -69,4 +71,16 @@ color:#16123f;
     }
   } */
 
-  #map { height: 500px; }
+  #map { height: 400px;
+    transition: transform .5s;border: solid 1px ; }
+
+  
+
+
+#map:hover 
+{
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.02); 
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
