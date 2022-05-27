@@ -2,6 +2,7 @@
 <h1>-----------------</h1>
 <form (ngSubmit) = "createPServ()">
     P_id <input type="text" class="form-control" name="pid" [(ngModel)] = "prdC.p_id">
+    p_img <input type="text" class="form-control" name="pimg" [(ngModel)] = "prdC.p_img">
     p_name <input type="text" class="form-control" name="pname" [(ngModel)] = "prdC.p_name">
     p_size <input type="text" class="form-control" name="psize" [(ngModel)] = "prdC.p_size">
     <!-- <select class="form-select" aria-label="Default select example">
@@ -17,7 +18,7 @@
     p_price <input type="number" class="form-control" name="pprice" [(ngModel)] = "prdC.p_price">
     p_sleev <input type="text" class="form-control" name="psleev" [(ngModel)] = "prdC.p_sleev">
     p_neck <input type="text" class="form-control" name="pneck" [(ngModel)] = "prdC.p_neck">
-    <input type="submit" value="submit">
+    <input type="submit" value="submit" (click)="showToasterSuccess()">
 </form>
 <h1>-----------------</h1>
 <form (ngSubmit) = "readPServ()">

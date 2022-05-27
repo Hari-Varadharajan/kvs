@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { Products } from '../products';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -29,4 +30,7 @@ export class ProductsService {
   readAllProducts(){
     return this.http.get(this.baseUri+'',{headers:this.headers})
   }
+
+
+
 }

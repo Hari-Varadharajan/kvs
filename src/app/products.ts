@@ -6,4 +6,5 @@ export class Products {
     public p_price : Number = 0;
     public p_sleev : string = "";
     public p_neck : string = "";
+    public p_img : string = "";
 }
