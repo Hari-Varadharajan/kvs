@@ -9,14 +9,16 @@ import * as L from 'leaflet';
 })
 export class HomeComponent implements OnInit ,AfterViewInit{
 
+
+  // MAP
   private map: L.Map | undefined;
 
   private initMap(): void {
     this.map = L.map('map', {
-      center: [ 11.273571849637891, 77.60694606009113],  //, 
-      zoom: 17
+      center: [ 11.127582923595654, 77.34626148888567],  //11.127582923595654, 77.34626148888567
+      zoom: 16
     });
-    L.marker([11.273571849637891, 77.60694606009113]).addTo(this.map)
+    L.marker([11.127582923595654, 77.34626148888567]).addTo(this.map)
     .bindPopup('Find Us Here')
     .openPopup();
 
@@ -67,7 +69,12 @@ export class HomeComponent implements OnInit ,AfterViewInit{
   }
 
  
- 
-  mybg:string = "/assets/images/KVS.gif" ;
+ // CONTACT
+  mailid() {
+    navigator.clipboard.writeText("ceokardle@gmail.com");
+  }
+  phnno() {
+   navigator.clipboard.writeText("9840153059");
+  }
   
 }
