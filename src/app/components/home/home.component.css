@@ -2,12 +2,15 @@
  width: 100%;
  height: 700px;
  background: linear-gradient(to top left, #75c9b7 0%, #abd699 100%);
+ font-family: 'Koulen', cursive;
 }
 
 #bgvanta3
 {
   /* background: linear-gradient(to top left, #75c9b7 0%, #abd699 100%); */
   background-color: rgb(255, 255, 255);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
 }
 
 
@@ -19,6 +22,8 @@ height: 725px; */
 {
   transition: color 0.5s, background-color 0.5s;
 color:#16123f;
+font-family: 'Open Sans', sans-serif;
+font-weight: 900;
   
   
   
@@ -41,6 +46,8 @@ color:#16123f;
     height: 500px;
     /* background: linear-gradient(to top left, #abd699 0%, #75c9b7 100%); */
     background-color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
 }
 /* #cmpny{
     color: white;
@@ -92,6 +99,8 @@ color:#16123f;
   font-size: 50px;
   color: #16123f;
   transition: font-size 0.5s,color 0.5s;
+
+  
 }
 .con1:hover{
   font-size: 60px;

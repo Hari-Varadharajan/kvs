@@ -53,13 +53,12 @@
         <h5 class="card-title">{{ row.p_name }}</h5>
         <p class="card-text">{{ row.p_id }}</p>
         <!-- <p class="card-text">{{ row.p_name }}</p>
-      
         <p class="card-text">{{ row.p_size }}</p>
         <p class="card-text">{{row.p_stock}}</p> -->
         <!-- <p class="card-text">{{row.p_price}}</p>
         <p class="card-text">{{row.p_sleev}}</p>
         <p class="card-text">{{row.p_neck}}</p> -->
-        <a  class="btn btn-warning" >Go</a>
+        <a  class="btn btn-warning" (click) = "details(row.p_id)">Go</a>
       </div>
     </div>
     

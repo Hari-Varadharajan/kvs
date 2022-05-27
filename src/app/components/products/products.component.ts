@@ -10,6 +10,7 @@ import { ProductsService } from 'src/app/shared/products.service';
 export class ProductsComponent implements OnInit {
 
   products : any;
+  stuR :Products = new Products();
   
   constructor(private productService : ProductsService) { }
 
@@ -20,7 +21,7 @@ export class ProductsComponent implements OnInit {
   getAllProducts(){
     this.productService.readAllProducts().subscribe(
       (data:any)=>{
-        console.log(data);
+        //console.log(data);
         this.products = data;
       },
       err =>{
@@ -29,8 +30,16 @@ export class ProductsComponent implements OnInit {
     )
   }
 
-  details(){
-    
+  details(singleprdid :string){
+    this.stuR.p_id = singleprdid
+    this.productService.readProduct(this.stuR).subscribe(
+      (data:any) => {
+        console.log(data)
+        this.stuR = data
+      },
+      err => {console.log(err)}
+    )
+    //console.log(this.stuR);
   }
 
 }
