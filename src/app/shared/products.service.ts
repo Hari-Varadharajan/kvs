@@ -10,6 +10,7 @@ export class ProductsService {
 
   private baseUri : string = "http://localhost:5000";
   private headers = new HttpHeaders().set('Content-Type','application/json');
+  prd :Products = new Products()
 
   constructor(private http : HttpClient) { }
 
@@ -32,5 +33,10 @@ export class ProductsService {
   }
 
 
-
+  setPrd(obj : Products){
+    this.prd = obj
+  }
+  getPrd(){
+    return this.prd;
+  }
 }

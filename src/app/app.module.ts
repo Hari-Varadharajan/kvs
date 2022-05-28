@@ -10,13 +10,11 @@ import { ProductsService } from './shared/products.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { SingleComponent } from './components/single/single.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
-    SingleComponent,
   ],
   imports: [
     BrowserModule,

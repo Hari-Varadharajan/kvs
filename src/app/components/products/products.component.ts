@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Products } from 'src/app/products';
 import { ProductsService } from 'src/app/shared/products.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -12,7 +13,9 @@ export class ProductsComponent implements OnInit {
   products : any;
   stuR :Products = new Products();
   
-  constructor(private productService : ProductsService) { }
+  constructor(private productService : ProductsService, private router: Router) { }
+
+  prdurl : string = this.router.url +'/single'
 
   ngOnInit(): void {
     this.getAllProducts();
@@ -40,6 +43,8 @@ export class ProductsComponent implements OnInit {
       err => {console.log(err)}
     )
     //console.log(this.stuR);
-  }
+    this.productService.setPrd(this.stuR)
+    this.router.navigateByUrl( this.prdurl);
 
+}
 }
