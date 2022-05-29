@@ -2,6 +2,7 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 declare var VANTA:any
 declare var TypeIt:any
 import * as L from 'leaflet';
+import * as AOS from 'aos'
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -39,7 +40,8 @@ export class HomeComponent implements OnInit ,AfterViewInit{
 
   ngOnInit(): void {
    
-
+ 
+    AOS.init();
     //     VANTA.WAVES({
     //   el: "#bgvanta1",
     //   mouseControls: true,
