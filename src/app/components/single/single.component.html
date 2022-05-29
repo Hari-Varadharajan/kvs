@@ -1,1 +1,21 @@
 <p>single works!</p>
+
+<label>{{ myprd.p_id }}</label>
+<br>
+<label>{{ myprd.p_name }}</label>
+<br>
+<label>{{ myprd.p_size }}</label>
+<br>
+<label>{{ myprd.p_stock }}</label>
+<br>
+<label>{{ myprd.p_price }}</label>
+<br>
+<label>{{ myprd.p_sleev }}</label>
+<br>
+<label>{{ myprd.p_neck }}</label>
+
+<form (ngSubmit) = "sendMail()">
+    p_size <input type="text" class="form-control" name="psize" [(ngModel)] = "need">
+    <label> {{ need }}</label>
+    <input type="submit" value="submit">
+</form>
