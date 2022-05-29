@@ -37,14 +37,14 @@ export class ProductsComponent implements OnInit {
     this.stuR.p_id = singleprdid
     this.productService.readProduct(this.stuR).subscribe(
       (data:any) => {
-        console.log(data)
-        this.stuR = data
+        //console.log(data)
+        this.productService.setPrd(data)
+        this.router.navigateByUrl( this.prdurl);
       },
       err => {console.log(err)}
     )
     //console.log(this.stuR);
-    this.productService.setPrd(this.stuR)
-    this.router.navigateByUrl( this.prdurl);
+   
 
 }
 }

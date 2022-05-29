@@ -11,6 +11,7 @@ export class ProductsService {
   private baseUri : string = "http://localhost:5000";
   private headers = new HttpHeaders().set('Content-Type','application/json');
   prd :Products = new Products()
+  need:Products = new Products()
 
   constructor(private http : HttpClient) { }
 
@@ -38,5 +39,12 @@ export class ProductsService {
   }
   getPrd(){
     return this.prd;
+  }
+
+
+  sendMailserv(stneed :string){
+    console.log(stneed)
+    this.need.p_need = stneed
+    return this.http.post(this.baseUri+'/send',this.need,{headers:this.headers})
   }
 }

@@ -10,6 +10,7 @@ import { ProductsService } from 'src/app/shared/products.service';
 export class SingleComponent implements OnInit {
 
   myprd :Products = new Products();
+  need :string =""
 
   constructor( private prodserv : ProductsService) { }
 
@@ -17,5 +18,11 @@ export class SingleComponent implements OnInit {
      this.myprd= this.prodserv.getPrd();
       console.log(this.myprd)
   }
-
+  
+  sendMail(){
+    this.prodserv.sendMailserv(this.need).subscribe(
+      data =>{console.log(data)},
+      err => {console.log(err)}
+    )
+  }
 }
