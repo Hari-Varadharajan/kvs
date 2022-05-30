@@ -2,7 +2,7 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 declare var VANTA:any
 declare var TypeIt:any
 import * as L from 'leaflet';
-import * as AOS from 'aos'
+import * as AOS from 'aos';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -73,10 +73,10 @@ export class HomeComponent implements OnInit ,AfterViewInit{
  
  // CONTACT
   mailid() {
-    navigator.clipboard.writeText("ceokardle@gmail.com");
+    navigator.clipboard.writeText("www.kidnapsingh@yahoo.com");
   }
   phnno() {
-   navigator.clipboard.writeText("9840153059");
+   navigator.clipboard.writeText("1234567890");
   }
   
 }
