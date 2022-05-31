@@ -12,6 +12,7 @@ export class ProductsService {
   private headers = new HttpHeaders().set('Content-Type','application/json');
   prd :Products = new Products()
   need:Products = new Products()
+  
 
   constructor(private http : HttpClient) { }
 
