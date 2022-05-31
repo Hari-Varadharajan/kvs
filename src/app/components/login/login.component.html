@@ -1,1 +1,6 @@
 <p>login works!</p>
+<form (ngSubmit) = "checkadmin()">
+    adminname <input type="text" name="adname" [(ngModel)] = "adminname" >
+    password <input type="password" name="adpass" [(ngModel)] = "password" >
+    <input type="submit" name="submit">
+</form>

@@ -8,4 +8,7 @@ export class Products {
     public p_neck : string = "";
     public p_img : string = "";
     public p_need : string = "";
+    public p_email : string = "";
+    public p_username : string = "";
+    public p_phoneno : string = "";
 }

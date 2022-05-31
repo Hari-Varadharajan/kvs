@@ -13,8 +13,8 @@ const routes: Routes = [
   {path : 'about' , component : AboutComponent},
   {path : 'products' , component : ProductsComponent},
   {path : 'cart' , component : CartComponent},
-  {path : 'admin' , component : AdminComponent},
-  {path : 'login' , component : LoginComponent},
+  {path : 'admin/loggedin' , component : AdminComponent},
+  {path : 'admin' , component : LoginComponent},
   {path : 'products/single', component : SingleComponent},
 ];
 

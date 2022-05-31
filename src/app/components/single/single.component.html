@@ -4,8 +4,6 @@
 <br>
 <label>{{ myprd.p_name }}</label>
 <br>
-<label>{{ myprd.p_size }}</label>
-<br>
 <label>{{ myprd.p_stock }}</label>
 <br>
 <label>{{ myprd.p_price }}</label>
@@ -15,7 +13,9 @@
 <label>{{ myprd.p_neck }}</label>
 
 <form (ngSubmit) = "sendMail()">
-    p_size <input type="text" class="form-control" name="psize" [(ngModel)] = "need">
-    <label> {{ need }}</label>
+    p_need <input type="text" class="form-control" name="psize" [(ngModel)] = "need">
+    p_email <input type="text" class="form-control" name="pemail" [(ngModel)] = "mail">
+    p_username <input type="text" class="form-control" name="pusername" [(ngModel)] = "username"> 
+    p_phoneno <input type="text" class="form-control" name="phno" [(ngModel)] = "phno"> 
     <input type="submit" value="submit">
 </form>

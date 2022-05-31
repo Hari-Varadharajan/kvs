@@ -11,6 +11,9 @@ export class SingleComponent implements OnInit {
 
   myprd :Products = new Products();
   need :string =""
+  mail :string =""
+  username :string =""
+  phno :string =""
 
   constructor( private prodserv : ProductsService) { }
 
@@ -20,7 +23,7 @@ export class SingleComponent implements OnInit {
   }
   
   sendMail(){
-    this.prodserv.sendMailserv(this.need).subscribe(
+    this.prodserv.sendMailserv(this.need,this.mail,this.username,this.phno,this.myprd).subscribe(
       data =>{console.log(data)},
       err => {console.log(err)}
     )
