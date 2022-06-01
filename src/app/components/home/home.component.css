@@ -122,3 +122,9 @@ font-family: 'Open Sans', sans-serif;
 top: 25%;
 left: 25%;
 }
+
+/* olungana  */
+
+.pics :hover{
+  box-shadow: 0px 0px 20px blue;
+}
