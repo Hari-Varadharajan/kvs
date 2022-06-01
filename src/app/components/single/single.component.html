@@ -1,21 +1,87 @@
-<p>single works!</p>
+<nav style="background-color:#ffe26afc  ;box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);font-size: 20px;" class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+      <a style="font-size: 20px;" class="navbar-brand" href="http://localhost:4200/"><img src="../../../assets/images/finalogo.JPG" width="100" height="45" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul id="top" style="font-size:20px;" class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:4200/products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#bgvanta2">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact us</a>
+          </li>
+        </ul>
+        
+      
+      </div>
+    </div>
+  </nav>
+  
 
-<label>{{ myprd.p_id }}</label>
-<br>
-<label>{{ myprd.p_name }}</label>
-<br>
-<label>{{ myprd.p_stock }}</label>
-<br>
-<label>{{ myprd.p_price }}</label>
-<br>
-<label>{{ myprd.p_sleev }}</label>
-<br>
-<label>{{ myprd.p_neck }}</label>
+  <div class="container-fluid thebox">
+      <div class="col-2"></div>
+      <div class="col-8 container-fluid thebox2">
+          <div class="row">
+            <div class="col-5">
+                <img src="{{ myprd.p_img }}" class="card-img-top" alt="...">
+            </div>
+            <div class="col-7 ">
+                <h2 >{{ myprd.p_id }} : {{ myprd.p_name }}</h2>
+                <br>
+                <h1 style="color: #7a6617 ;border-color: black;"> Rs . {{ myprd.p_price }}</h1>
+                <br>
+                <div style="margin-left: 70px">
+                    <pre> <h5>Sleev Type       :   {{ myprd.p_sleev }}</h5></pre>
+                    <pre><h5>Neck Type        :   {{ myprd.p_neck }}</h5></pre>
+                    <pre><h5>Current Stock    :   {{ myprd.p_stock }}</h5></pre>
+                </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <form (ngSubmit) = "sendMail()">
+            <div class="mb-5 input-group row g-3">
+                <div class="col-5" style="text-align: center">
+                <label for="user"  class="form-label ">Your Name :</label>
+              </div>
+              <div class="col-6">
+                <input style="border: 1px solid rgb(0, 0, 0);" type="text" class="form-control" name="name" id="user"  [(ngModel)] = "username">
+              </div>
+            </div> 
+            <div class="mb-5 input-group row g-3">
+                <div class="col-5" style="text-align: center">
+                <label for="user"  class="form-label ">Your E-Mail :</label>
+              </div>
+              <div class="col-6">
+                <input style="border: 1px solid rgb(0, 0, 0);" type="text" class="form-control" name="name" id="user" [(ngModel)] = "mail">
+              </div>
+            </div> 
+            <div class="mb-5 input-group row g-3">
+                <div class="col-5" style="text-align: center">
+                <label for="user"  class="form-label ">Your Contact Number :</label>
+              </div>
+              <div class="col-6">
+                <input style="border: 1px solid rgb(0, 0, 0);" type="text" class="form-control" name="name" id="user"  [(ngModel)] = "phno">
+              </div>
+            </div>
+            <div class="mb-5 input-group row g-3">
+                <div class="col-5" style="text-align: center">
+                <label for="user"  class="form-label ">Stock Needed :</label>
+              </div>
+              <div class="col-6">
+                <input style="border: 1px solid rgb(0, 0, 0);" type="text" class="form-control" name="name" id="user"  [(ngModel)] = "need">
+              </div>
+            </div>  
+            <div class="text-center">  
+                <input  class="btn btn-warning " type="submit" value="ENQUIRE" style="border-radius: 7px; width: 120px; " >
+            </div>
+        </form>
+      </div>
+      <div class="col-2"></div>
+  </div>
 
-<form (ngSubmit) = "sendMail()">
-    p_need <input type="text" class="form-control" name="psize" [(ngModel)] = "need">
-    p_email <input type="text" class="form-control" name="pemail" [(ngModel)] = "mail">
-    p_username <input type="text" class="form-control" name="pusername" [(ngModel)] = "username"> 
-    p_phoneno <input type="text" class="form-control" name="phno" [(ngModel)] = "phno"> 
-    <input type="submit" value="submit">
-</form>
