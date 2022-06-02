@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit ,AfterViewInit{
       zoom: 16
     });
     L.marker([11.127582923595654, 77.34626148888567]).addTo(this.map)
-    .bindPopup('Find Us Here')
+    .bindPopup(`<html><a href="https://www.google.co.in/maps/place/11%C2%B007'39.3%22N+77%C2%B020'46.5%22E/@11.1276127,77.3458951,19.34z/data=!4m5!3m4!1s0x0:0x9642ee75828660d5!8m2!3d11.1275829!4d77.3462615" target="blank">Find Us Here </a></html>`)
     .openPopup();
 
     const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

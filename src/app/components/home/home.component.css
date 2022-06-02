@@ -126,7 +126,34 @@ left: 25%;
 
 /* olungana  */
 
-.pics :hover{
+.pics{
+  margin: 50px;
+}
+
+.picsimg{
+  transition: 0.5s;
+}
+.picsimg:hover{
   box-shadow: 0px 0px 20px #0c624f;
 }
 
+.duty{
+
+  box-shadow:  5px 10px 10px #0c624f;
+  background-color:#e8fff8;
+  border-radius:20px ;
+  transition: 1s;
+}
+.duty:hover{
+  box-shadow: 2px 2px 6px 6px #0c624f;
+}
+
+.goal{
+  box-shadow:  5px 10px 10px #0c624f;
+  background-color:#feffc7;
+border-radius: 20px;
+transition: 1s;
+}
+.goal:hover{
+  box-shadow: 2px 2px 6px 6px #0c624f;
+}
