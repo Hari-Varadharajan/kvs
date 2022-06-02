@@ -139,7 +139,7 @@ left: 25%;
 
 .duty{
 
-  box-shadow:  5px 10px 10px #0c624f;
+  box-shadow:  -5px 10px 10px #0c624f;
   background-color:#e8fff8;
   border-radius:20px ;
   transition: 1s;
@@ -149,7 +149,7 @@ left: 25%;
 }
 
 .goal{
-  box-shadow:  5px 10px 10px #0c624f;
+  box-shadow:   10px -5px 10px #0c624f;
   background-color:#feffc7;
 border-radius: 20px;
 transition: 1s;
