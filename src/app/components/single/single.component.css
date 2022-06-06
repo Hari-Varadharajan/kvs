@@ -4,3 +4,8 @@
     background: linear-gradient(to top left, #d8fff7 0%, #c8fcb2 100%);
     border-radius: 20px;
 }
+
+#user:focus
+{
+    background-color: rgb(245, 239, 174);
+}
