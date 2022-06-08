@@ -52,4 +52,13 @@ export class ProductsService {
     this.need.p_email = email
     return this.http.post(this.baseUri+'/send',this.need,{headers:this.headers})
   }
+
+  createOrder(stneed :string, email : string, username : string, phno : string,prd : Products){
+    this.need = prd
+    this.need.p_need = stneed
+    this.need.p_username = username
+    this.need.p_phoneno = phno
+    this.need.p_email = email
+    return this.http.post(this.baseUri+'/enq',this.need,{headers:this.headers});
+  }
 }
