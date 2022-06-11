@@ -1,3 +1,28 @@
+#tophome li a
+{
+  transition: color 0.5s, background-color 0.5s;
+color:#16123f;
+font-family: 'Open Sans', sans-serif;
+
+font-size:small;
+font-weight: 900;
+  
+  
+}
+#tophome li 
+{
+  padding: 2px;
+}
+#tophome li a:hover
+           {
+                background-color:rgba(0, 0, 0, 0.05); 
+                
+               color: white;
+               
+               
+               
+           }
+
 .bb {
     --c: goldenrod;
     color: var(--c);

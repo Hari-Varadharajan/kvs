@@ -73,10 +73,10 @@ export class HomeComponent implements OnInit ,AfterViewInit{
  
  // CONTACT
   mailid() {
-    navigator.clipboard.writeText("www.kidnapsingh@yahoo.com");
+    navigator.clipboard.writeText("kvsgarments@outlook.com");
   }
   phnno() {
-   navigator.clipboard.writeText("1234567890");
+   navigator.clipboard.writeText("7010605192");
   }
   
 }

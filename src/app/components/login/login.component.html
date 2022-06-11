@@ -1,23 +1,22 @@
-<nav style="background-color:#ffe26afc  ;box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);font-size: 20px;" class="navbar navbar-expand-lg navbar-light fixed-top">
+<nav style="background-color:#ffe26afc ;box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);font-size: 20px;" class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container-fluid">
       <a style="font-size: 20px;" class="navbar-brand" href="http://localhost:4200/"><img src="../../../assets/images/finalogo.JPG" width="100" height="45" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul id="top" style="font-size:20px;" class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul id="tophome"  class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="http://localhost:4200/products">Products</a>
+            <a class="nav-link active nv" href="http://localhost:4200/products">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#bgvanta2">About</a>
+            <a class="nav-link active nv" href="#bgvanta2">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact us</a>
+            <a class="nav-link active nv" href="#contact">Contact us</a>
           </li>
         </ul>
-        
-      
+   
       </div>
     </div>
   </nav>
@@ -35,6 +34,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
    <style>
      @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+
+     #tophome li a
+{
+  transition: color 0.5s, background-color 0.5s;
+color:#16123f;
+font-family: 'Open Sans', sans-serif;
+
+font-size:small;
+font-weight: 900;
+  
+  
+}
+#tophome li 
+{
+  padding: 2px;
+}
+#tophome li a:hover
+           {
+                background-color:rgba(0, 0, 0, 0.05); 
+                
+               color: white;
+               
+               
+               
+           }
+
 
 body {
     font-family: 'Poppins', sans-serif;
