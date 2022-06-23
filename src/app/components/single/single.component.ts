@@ -31,5 +31,6 @@ export class SingleComponent implements OnInit {
       data =>{console.log(data)},
       err => {console.log(err)}
     )
+    alert("Enquiry sent successfully " ); 
   }
 }
