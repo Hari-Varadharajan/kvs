@@ -57,7 +57,7 @@
                 <label for="user"  class="form-label ">Your E-Mail :</label>
               </div>
               <div class="col-6">
-                <input style="border: 1px solid rgb(0, 0, 0);" type="text" class="form-control" name="name" id="user" [(ngModel)] = "mail">
+                <input style="border: 1px solid rgb(0, 0, 0);" type="text" class="form-control" name="name" id="usere" [(ngModel)] = "mail">
               </div>
             </div> 
             <div class="mb-5 input-group row g-3">
@@ -65,7 +65,7 @@
                 <label for="user"  class="form-label ">Your Contact Number :</label>
               </div>
               <div class="col-6">
-                <input style="border: 1px solid rgb(0, 0, 0);" type="text" class="form-control" name="name" id="user"  [(ngModel)] = "phno">
+                <input style="border: 1px solid rgb(0, 0, 0);" type="text" class="form-control" name="name" id="userc"  [(ngModel)] = "phno">
               </div>
             </div>
             <div class="mb-5 input-group row g-3">
@@ -73,11 +73,14 @@
                 <label for="user"  class="form-label ">Stock Needed :</label>
               </div>
               <div class="col-6">
-                <input style="border: 1px solid rgb(0, 0, 0);" type="text" class="form-control" name="name" id="user"  [(ngModel)] = "need">
+                <input style="border: 1px solid rgb(0, 0, 0);" type="text" class="form-control" name="name" id="users"  [(ngModel)] = "need">
               </div>
             </div>  
             <div class="text-center">  
-                <input  class="btn btn-warning " type="submit" value="ENQUIRE" style="border-radius: 7px; width: 120px; " >
+                <input onclick="document.getElementById('user').value = '';
+                                document.getElementById('usere').value = '';
+                                document.getElementById('userc').value = '';
+                                document.getElementById('users').value = ''; " class="btn btn-warning " type="submit" value="ENQUIRE" style="border-radius: 7px; width: 120px; " >
             </div>
         </form>
       </div>
