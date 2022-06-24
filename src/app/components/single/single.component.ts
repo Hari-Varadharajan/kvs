@@ -11,6 +11,7 @@ export class SingleComponent implements OnInit {
 
   myprd :Products = new Products();
   need :string =""
+  stck :Number = 0
   mail :string =""
   username :string =""
   phno :string =""
@@ -23,14 +24,20 @@ export class SingleComponent implements OnInit {
   }
   
   sendMail(){
-    this.prodserv.createOrder(this.need,this.mail,this.username,this.phno,this.myprd).subscribe(
-      data=>{console.log(data)},
-      err => {console.log(err)}
-    )
-    this.prodserv.sendMailserv(this.need,this.mail,this.username,this.phno,this.myprd).subscribe(
-      data =>{console.log(data)},
-      err => {console.log(err)}
-    )
-    alert("Enquiry sent successfully " ); 
+    this.stck = +this.need
+    if(this.myprd.p_stock < this.stck){
+      alert("not avail")
+    }
+    else{
+      this.prodserv.createOrder(this.need,this.mail,this.username,this.phno,this.myprd).subscribe(
+        data=>{console.log(data)},
+        err => {console.log(err)}
+      )
+      this.prodserv.sendMailserv(this.need,this.mail,this.username,this.phno,this.myprd).subscribe(
+        data =>{console.log(data)},
+        err => {console.log(err)}
+      )
+      alert("Enquiry sent successfully " ); 
+    }
   }
 }
