@@ -1,167 +1,171 @@
-<div class="row">
-    <div class="col-md-1"></div>
-    <div class="col-md-10" style="background-color: rgb(246, 246, 178);border-radius:20px ;">
-        <form (ngSubmit) = "createPServ()">
-            <h3 style="text-align: center;">CREATE</h3>
-            <div class="col-3"></div>
-            <div class="container-fluid col-6">
-                <div class="row">
-                    <div class="col-6">
-                        <label>P_id</label>  
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10" style="background-color: rgb(246, 246, 178);box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);">
+            <form (ngSubmit) = "createPServ()">
+                <h3 style="text-align: center;">INSERT T-SHIRT</h3>
+                <div class="col-3"></div>
+                <div class="container-fluid col-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <label>P_id</label>  
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control" name="pid" [(ngModel)] = "prdC.p_id">
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <input type="text" class="form-control" name="pid" [(ngModel)] = "prdC.p_id">
+                    <div class="row">
+                        <div class="col-6 mt-3">
+                            <label> p_img</label> 
+                        </div>
+                        <div class="col-6 mt-3">
+                            <input type="text" class="form-control" name="pimg" [(ngModel)] = "prdC.p_img">
+                        </div>
                     </div>
+                    <div class="row">
+                        <div class="col-6 mt-3">
+                            <label> p_name</label> 
+                        </div>
+                        <div class="col-6 mt-3">
+                            <input type="text" class="form-control" name="pname" [(ngModel)] = "prdC.p_name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mt-3">
+                            <label>  p_size</label>  
+                        </div>
+                        <div class="col-6 mt-3">
+                            <input type="text" class="form-control" name="psize" [(ngModel)] = "prdC.p_size">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mt-3">
+                            <label>p_stock</label> 
+                        </div>
+                        <div class="col-6 mt-3">
+                            <input type="number" class="form-control" name="pstock" [(ngModel)] = "prdC.p_stock">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mt-3">
+                            <label>p_price</label>  
+                        </div>
+                        <div class="col-6 mt-3">
+                            <input type="number" class="form-control" name="pprice" [(ngModel)] = "prdC.p_price">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mt-3">
+                            <label>p_sleev</label>
+                        </div>
+                        <div class="col-6 mt-3">
+                            <input type="text" class="form-control" name="psleev" [(ngModel)] = "prdC.p_sleev">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mt-3">
+                            <label>p_neck</label>  
+                        </div>
+                        <div class="col-6 mt-3">
+                            <input type="text" class="form-control" name="pneck" [(ngModel)] = "prdC.p_neck">
+                        </div>
+                    </div>
+                    <!-- <select class="form-select" aria-label="Default select example">
+                        <option selected>SIZE</option>
+                        <option value="1">S</option>
+                        <option value="2">M</option>
+                        <option value="3">L</option>
+                        <option value="1">XL</option>
+                        <option value="2">XXL</option>
+                        <option value="3">XXXL</option>
+                      </select> -->
+                    <input  type="submit" value="submit" class="btn btn-warning d-flex mt-3 mx-auto ">
                 </div>
-                <div class="row">
-                    <div class="col-6 mt-3">
-                        <label> p_img</label> 
-                    </div>
-                    <div class="col-6 mt-3">
-                        <input type="text" class="form-control" name="pimg" [(ngModel)] = "prdC.p_img">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 mt-3">
-                        <label> p_name</label> 
-                    </div>
-                    <div class="col-6 mt-3">
-                        <input type="text" class="form-control" name="pname" [(ngModel)] = "prdC.p_name">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 mt-3">
-                        <label>  p_size</label>  
-                    </div>
-                    <div class="col-6 mt-3">
-                        <input type="text" class="form-control" name="psize" [(ngModel)] = "prdC.p_size">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 mt-3">
-                        <label>p_stock</label> 
-                    </div>
-                    <div class="col-6 mt-3">
-                        <input type="number" class="form-control" name="pstock" [(ngModel)] = "prdC.p_stock">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 mt-3">
-                        <label>p_price</label>  
-                    </div>
-                    <div class="col-6 mt-3">
-                        <input type="number" class="form-control" name="pprice" [(ngModel)] = "prdC.p_price">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 mt-3">
-                        <label>p_sleev</label>
-                    </div>
-                    <div class="col-6 mt-3">
-                        <input type="text" class="form-control" name="psleev" [(ngModel)] = "prdC.p_sleev">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 mt-3">
-                        <label>p_neck</label>  
-                    </div>
-                    <div class="col-6 mt-3">
-                        <input type="text" class="form-control" name="pneck" [(ngModel)] = "prdC.p_neck">
-                    </div>
-                </div>
-                <!-- <select class="form-select" aria-label="Default select example">
-                    <option selected>SIZE</option>
-                    <option value="1">S</option>
-                    <option value="2">M</option>
-                    <option value="3">L</option>
-                    <option value="1">XL</option>
-                    <option value="2">XXL</option>
-                    <option value="3">XXXL</option>
-                  </select> -->
-                <input  type="submit" value="submit" class="btn btn-warning d-flex mt-3 mx-auto ">
-            </div>
-            <div class="col-3"></div>
-        </form>
+                <div class="col-3"></div>
+            </form>
+        </div>
+        <div class="col-md-1"></div>
     </div>
-    <div class="col-md-1"></div>
-</div>
-
-<!-- <p>READ</p>
-<h1>-----------------</h1>
-<form (ngSubmit) = "readPServ()">
-    <div class="col-3"></div>
-    <div class="container-fluid col-6">
-        <div class="row">
-            <div class="col-6">
-                <label> P_id</label>  
-            </div>
-            <div class="col-6">
-                <input type="text" class="form-control" name="pid" [(ngModel)] = "prdR.p_id">
+    
+    <!-- <p>READ</p>
+    <h1>-----------------</h1>
+    <form (ngSubmit) = "readPServ()">
+        <div class="col-3"></div>
+        <div class="container-fluid col-6">
+            <div class="row">
+                <div class="col-6">
+                    <label> P_id</label>  
+                </div>
+                <div class="col-6">
+                    <input type="text" class="form-control" name="pid" [(ngModel)] = "prdR.p_id">
+                </div>
             </div>
         </div>
+        <p>{{ prdR.p_name }}</p>
+        <input type="submit" value="submit" class=" d-flex mt-3 mx-auto ">
+        <div class="col-3"></div>
+    </form> -->
+    
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10" style="background-color:rgb(246, 246, 178);box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);">
+            <form (ngSubmit) = "updatePServ()">
+                <h3 style="text-align: center;">UPDATE STOCK</h3>
+                <div class="col-3"></div>
+                <div class="container-fluid col-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <label> P_id</label>  
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control" name="pid" [(ngModel)] = "prdU.p_id">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mt-3">
+                            <label> p_stock </label>  
+                        </div>
+                        <div class="col-6 mt-3">
+                            <input type="text" class="form-control" name="pstock" [(ngModel)] = "prdU.p_stock">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+                <input type="submit" value="submit" class=" btn btn-warning d-flex mt-3 mx-auto ">
+            </form>
+        </div>
+        <div class="col-md-1"></div>
     </div>
-    <p>{{ prdR.p_name }}</p>
-    <input type="submit" value="submit" class=" d-flex mt-3 mx-auto ">
-    <div class="col-3"></div>
-</form> -->
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10" style="background-color: rgb(246, 246, 178);box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);">
+            <h3 style="text-align: center;">DELETE T-SHIRT</h3>
+            <form (ngSubmit) = "deletePServ()">
+                <div class="col-3"></div>
+                <div class="container-fluid col-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <label> P_id </label>  
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control" name="pid" [(ngModel)] = "prdD.p_id">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+                <input type="submit" value="submit" class="btn btn-warning d-flex mt-3 mx-auto ">  
+            </form>
+        </div>
+        <div class="col-md-1"></div>
+       
+    </div>
+    
+</div>
 
 <div class="row">
     <div class="col-md-1"></div>
-    <div class="col-md-10" style="background-color: rgb(180, 229, 124);">
-        <form (ngSubmit) = "updatePServ()">
-            <h3 style="text-align: center;">UPDATE</h3>
-            <div class="col-3"></div>
-            <div class="container-fluid col-6">
-                <div class="row">
-                    <div class="col-6">
-                        <label> P_id</label>  
-                    </div>
-                    <div class="col-6">
-                        <input type="text" class="form-control" name="pid" [(ngModel)] = "prdU.p_id">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 mt-3">
-                        <label> p_stock </label>  
-                    </div>
-                    <div class="col-6 mt-3">
-                        <input type="text" class="form-control" name="pstock" [(ngModel)] = "prdU.p_stock">
-                    </div>
-                </div>
-            </div>
-            <div class="col-3"></div>
-            <input type="submit" value="submit" class=" d-flex mt-3 mx-auto ">
-        </form>
-    </div>
-    <div class="col-md-1"></div>
-</div>
-<div class="row">
-    <div class="col-md-1"></div>
-    <div class="col-md-10" style="background-color: rgb(236, 173, 173);">
-        <h3 style="text-align: center;">DELETE</h3>
-        <form (ngSubmit) = "deletePServ()">
-            <div class="col-3"></div>
-            <div class="container-fluid col-6">
-                <div class="row">
-                    <div class="col-6">
-                        <label> P_id </label>  
-                    </div>
-                    <div class="col-6">
-                        <input type="text" class="form-control" name="pid" [(ngModel)] = "prdD.p_id">
-                    </div>
-                </div>
-            </div>
-            <div class="col-3"></div>
-            <input type="submit" value="submit" class=" d-flex mt-3 mx-auto ">  
-        </form>
-    </div>
-    <div class="col-md-1"></div>
-   
-</div>
-
-<div class="row">
-    <div class="col-md-1"></div>
-    <div class="col-md-10" style="background-color: rgb(236, 173, 173);">
+    <div class="col-md-10" style="background-color: rgb(246, 246, 178);box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);">
         <h3 style="text-align: center;">ADD ADMIN</h3>
         <form (ngSubmit) = "createAdmServ()">
             <div class="col-3"></div>
