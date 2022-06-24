@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Products } from 'src/app/products';
+import { Admin } from 'src/app/admin';
 import { ProductsService } from 'src/app/shared/products.service';
 
 @Component({
@@ -15,6 +16,8 @@ export class AdminComponent implements OnInit {
   prdR : Products = new Products();
   prdU : Products = new Products();
   prdD : Products = new Products();
+
+  ad : Admin = new Admin();
 
 
   constructor(private productService: ProductsService) { }
@@ -54,4 +57,10 @@ export class AdminComponent implements OnInit {
     )
   }
 
+  createAdmServ(){
+    this.productService.createAdmin(this.ad).subscribe(
+      data =>{console.log(data)},
+      err => {console.log(err)}
+    )
+  }
 }

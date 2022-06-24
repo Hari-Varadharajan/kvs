@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { Products } from '../products';
+import { Admin } from '../admin';
 
 
 @Injectable({
@@ -12,6 +13,7 @@ export class ProductsService {
   private headers = new HttpHeaders().set('Content-Type','application/json');
   prd :Products = new Products()
   need:Products = new Products()
+  ad : Admin = new Admin();
   
 
   constructor(private http : HttpClient) { }
@@ -60,5 +62,13 @@ export class ProductsService {
     this.need.p_phoneno = phno
     this.need.p_email = email
     return this.http.post(this.baseUri+'/enq',this.need,{headers:this.headers});
+  }
+
+  createAdmin(ad : Admin){
+    return this.http.post(this.baseUri+'/createadm',ad,{headers:this.headers});
+  }
+
+  readadm(ad :Admin){
+    return this.http.post(this.baseUri+'/readadm',ad,{headers:this.headers});
   }
 }
